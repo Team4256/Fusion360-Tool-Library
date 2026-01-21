@@ -1,26 +1,32 @@
 {
     "data": [
         {
-            "BMC": "hss",
-            "description": "Test Bit",
+            "BMC": "carbide",
+            "description": "Thrifty 4mm",
             "expressions": {
-                "tool_description": "'Test Bit'"
+                "tool_description": "'Thrifty 4mm'",
+                "tool_diameter": "4 mm",
+                "tool_fluteLength": "12 mm",
+                "tool_material": "'carbide'",
+                "tool_numberOfFlutes": "1",
+                "tool_overallLength": "45 mm",
+                "tool_productId": "'TTB-0045'",
+                "tool_unit": "'inches'"
             },
             "geometry": {
                 "CSP": false,
-                "DC": 0.25,
+                "DC": 0.15748031496062992,
                 "HAND": true,
                 "LB": 1,
-                "LCF": 0.75,
-                "NOF": 4,
-                "OAL": 1.5,
-                "SFDM": 0.25,
+                "LCF": 0.4724409448818898,
+                "NOF": 1,
+                "OAL": 1.7716535433070866,
+                "SFDM": 0.15748031496062992,
                 "assemblyGaugeLength": 1,
-                "shoulder-diameter": 0.25,
+                "shoulder-diameter": 0.15748031496062992,
                 "shoulder-length": 0.875
             },
-            "guid": "fe91e8db-42e0-44e0-8bfa-ac5ce535deee",
-            "last_modified": 1768958287242,
+            "guid": "77a30efa-6dcb-45a6-88f6-ac9855a7ede8",
             "post-process": {
                 "break-control": false,
                 "comment": "",
@@ -31,34 +37,37 @@
                 "number": 1,
                 "turret": 0
             },
-            "product-id": "",
+            "product-id": "TTB-0045",
             "product-link": "",
-            "reference_guid": "<NEW TOOL GUID>",
             "start-values": {
                 "presets": [
                     {
-                        "f_n": 0.0026666666666666666,
-                        "f_z": 0.002,
-                        "guid": "2a35cb2c-be10-4cb2-ac4d-e1d0a5e8f544",
+                        "expressions": {
+                            "tool_feedCutting": "10 inpm",
+                            "tool_spindleSpeed": "18000 rpm"
+                        },
+                        "f_n": 0.0007407407407407407,
+                        "f_z": 0.0005555555555555556,
+                        "guid": "20639c02-98bf-485a-bb42-360be5f3b8ac",
                         "material": {
                             "category": "all",
                             "query": "",
                             "use-hardness": false
                         },
-                        "n": 5000,
-                        "n_ramp": 5000,
+                        "n": 18000,
+                        "n_ramp": 18000,
                         "name": "Default preset",
                         "ramp-angle": 2,
                         "tool-coolant": "flood",
                         "use-stepdown": false,
                         "use-stepover": false,
-                        "v_c": 327.2492347489367,
-                        "v_f": 40,
-                        "v_f_leadIn": 40,
-                        "v_f_leadOut": 40,
+                        "v_c": 742.1085008479826,
+                        "v_f": 10,
+                        "v_f_leadIn": 10,
+                        "v_f_leadOut": 10,
                         "v_f_plunge": 13.333333333333334,
                         "v_f_ramp": 13.333333333333334,
-                        "v_f_transition": 40
+                        "v_f_transition": 10
                     }
                 ]
             },
