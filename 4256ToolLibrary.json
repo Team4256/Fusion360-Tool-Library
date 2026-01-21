@@ -11,20 +11,20 @@
                 "tool_numberOfFlutes": "1",
                 "tool_overallLength": "45 mm",
                 "tool_productId": "'TTB-0045'",
-                "tool_unit": "'inches'"
+                "tool_unit": "'millimeters'"
             },
             "geometry": {
                 "CSP": false,
-                "DC": 0.15748031496062992,
+                "DC": 4,
                 "HAND": true,
-                "LB": 1,
-                "LCF": 0.4724409448818898,
+                "LB": 25.4,
+                "LCF": 12,
                 "NOF": 1,
-                "OAL": 1.7716535433070866,
-                "SFDM": 0.15748031496062992,
-                "assemblyGaugeLength": 1,
-                "shoulder-diameter": 0.15748031496062992,
-                "shoulder-length": 0.875
+                "OAL": 45,
+                "SFDM": 4,
+                "assemblyGaugeLength": 25.4,
+                "shoulder-diameter": 4,
+                "shoulder-length": 22.225
             },
             "guid": "77a30efa-6dcb-45a6-88f6-ac9855a7ede8",
             "post-process": {
@@ -43,31 +43,180 @@
                 "presets": [
                     {
                         "expressions": {
-                            "tool_feedCutting": "10 inpm",
-                            "tool_spindleSpeed": "18000 rpm"
+                            "tool_coolant": "'disabled'",
+                            "tool_feedPerTooth": "0.00063 in",
+                            "tool_spindleSpeed": "20000 rpm"
                         },
-                        "f_n": 0.0007407407407407407,
-                        "f_z": 0.0005555555555555556,
+                        "f_n": 0.01693333333333333,
+                        "f_z": 0.016002,
                         "guid": "20639c02-98bf-485a-bb42-360be5f3b8ac",
                         "material": {
                             "category": "all",
                             "query": "",
                             "use-hardness": false
                         },
-                        "n": 18000,
-                        "n_ramp": 18000,
-                        "name": "Default preset",
+                        "n": 20000,
+                        "n_ramp": 20000,
+                        "name": "Aluminum",
                         "ramp-angle": 2,
-                        "tool-coolant": "flood",
+                        "tool-coolant": "disabled",
                         "use-stepdown": false,
                         "use-stepover": false,
-                        "v_c": 742.1085008479826,
-                        "v_f": 10,
-                        "v_f_leadIn": 10,
-                        "v_f_leadOut": 10,
+                        "v_c": 251.32741228718345,
+                        "v_f": 320.04,
+                        "v_f_leadIn": 320.04,
+                        "v_f_leadOut": 320.04,
+                        "v_f_plunge": 338.66666666666663,
+                        "v_f_ramp": 338.66666666666663,
+                        "v_f_transition": 320.04
+                    }
+                ]
+            },
+            "type": "flat end mill",
+            "unit": "millimeters",
+            "vendor": ""
+        },
+        {
+            "BMC": "carbide",
+            "description": "Thrifty 6mm",
+            "expressions": {
+                "tool_description": "'Thrifty 6mm'",
+                "tool_diameter": "6 mm",
+                "tool_material": "'carbide'",
+                "tool_numberOfFlutes": "1",
+                "tool_productId": "'TTB-0052'",
+                "tool_unit": "'millimeters'"
+            },
+            "geometry": {
+                "CSP": false,
+                "DC": 6,
+                "HAND": true,
+                "LB": 25.4,
+                "LCF": 19.05,
+                "NOF": 1,
+                "OAL": 38.1,
+                "SFDM": 6,
+                "assemblyGaugeLength": 25.4,
+                "shoulder-diameter": 6,
+                "shoulder-length": 22.225
+            },
+            "guid": "cbcbc29c-489c-4b9c-bcc4-01b621164a9f",
+            "post-process": {
+                "break-control": false,
+                "comment": "",
+                "diameter-offset": 2,
+                "length-offset": 2,
+                "live": true,
+                "manual-tool-change": false,
+                "number": 2,
+                "turret": 0
+            },
+            "product-id": "TTB-0052",
+            "product-link": "",
+            "start-values": {
+                "presets": [
+                    {
+                        "expressions": {
+                            "tool_coolant": "'disabled'",
+                            "tool_feedPerTooth": "0.00063 in",
+                            "tool_spindleSpeed": "20000 rpm"
+                        },
+                        "f_n": 0.01693333333333333,
+                        "f_z": 0.016002,
+                        "guid": "ac0a3ecc-8fb0-4158-a60c-3596aef009e9",
+                        "material": {
+                            "category": "all",
+                            "query": "",
+                            "use-hardness": false
+                        },
+                        "n": 20000,
+                        "n_ramp": 20000,
+                        "name": "Main",
+                        "ramp-angle": 2,
+                        "tool-coolant": "disabled",
+                        "use-stepdown": false,
+                        "use-stepover": false,
+                        "v_c": 376.9911184307752,
+                        "v_f": 320.04,
+                        "v_f_leadIn": 320.04,
+                        "v_f_leadOut": 320.04,
+                        "v_f_plunge": 338.66666666666663,
+                        "v_f_ramp": 338.66666666666663,
+                        "v_f_transition": 320.04
+                    }
+                ]
+            },
+            "type": "flat end mill",
+            "unit": "millimeters",
+            "vendor": ""
+        },
+        {
+            "BMC": "carbide",
+            "description": "",
+            "expressions": {
+                "tool_description": "''",
+                "tool_diameter": "0.25 in",
+                "tool_material": "'carbide'",
+                "tool_numberOfFlutes": "1",
+                "tool_productId": "''",
+                "tool_unit": "'inches'"
+            },
+            "geometry": {
+                "CSP": false,
+                "DC": 0.25,
+                "HAND": true,
+                "LB": 1,
+                "LCF": 0.75,
+                "NOF": 1,
+                "OAL": 1.5,
+                "SFDM": 0.25,
+                "assemblyGaugeLength": 1,
+                "shoulder-diameter": 0.25,
+                "shoulder-length": 0.875
+            },
+            "guid": "ad61bdf4-17cf-487a-a578-15624d5daed5",
+            "post-process": {
+                "break-control": false,
+                "comment": "",
+                "diameter-offset": 2,
+                "length-offset": 2,
+                "live": true,
+                "manual-tool-change": false,
+                "number": 2,
+                "turret": 0
+            },
+            "product-id": "",
+            "product-link": "",
+            "start-values": {
+                "presets": [
+                    {
+                        "expressions": {
+                            "tool_coolant": "'disabled'",
+                            "tool_feedPerTooth": "0.00063 in",
+                            "tool_spindleSpeed": "20000 rpm"
+                        },
+                        "f_n": 0.0006666666666666666,
+                        "f_z": 0.00063,
+                        "guid": "ac0a3ecc-8fb0-4158-a60c-3596aef009e9",
+                        "material": {
+                            "category": "all",
+                            "query": "",
+                            "use-hardness": false
+                        },
+                        "n": 20000,
+                        "n_ramp": 20000,
+                        "name": "Main",
+                        "ramp-angle": 2,
+                        "tool-coolant": "disabled",
+                        "use-stepdown": false,
+                        "use-stepover": false,
+                        "v_c": 1308.9969389957469,
+                        "v_f": 12.6,
+                        "v_f_leadIn": 12.6,
+                        "v_f_leadOut": 12.6,
                         "v_f_plunge": 13.333333333333334,
                         "v_f_ramp": 13.333333333333334,
-                        "v_f_transition": 10
+                        "v_f_transition": 12.6
                     }
                 ]
             },
